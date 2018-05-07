@@ -1,1 +1,1 @@
-# androidSocketChat
+# Android Socket Chat (SocketIO, NodeJS)

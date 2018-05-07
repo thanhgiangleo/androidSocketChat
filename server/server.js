@@ -6,8 +6,12 @@ var fs = require('fs');
 
 server.listen(process.env.PORT || 3000);
 
+app.get("/", function(req, res) {
+	res.sendFile(__dirname + "/index.html");
+});
+
 var listUser = [];
-io.socket.on('connection', function(socket) {
+io.sockets.on('connection', function(socket) {
 	console.log("Client connected.");
 
 	// check username
